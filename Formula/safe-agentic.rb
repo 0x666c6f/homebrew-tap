@@ -8,12 +8,12 @@ class SafeAgentic < Formula
 
   def install
     libexec.install Dir["*"]
-    %w[agent agent-claude agent-codex].each do |cmd|
-      bin.install_symlink libexec/"bin"/cmd
+    {"agent" => "safe-ag", "agent-claude" => "safe-ag-claude", "agent-codex" => "safe-ag-codex"}.each do |src, dst|
+      bin.install_symlink libexec/"bin"/src => dst
     end
   end
 
   test do
-    assert_match "safe-agentic", shell_output("\#{bin}/agent --version")
+    assert_match "safe-agentic", shell_output("#{bin}/safe-ag --version")
   end
 end
