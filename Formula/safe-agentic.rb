@@ -1,16 +1,15 @@
 class SafeAgentic < Formula
   desc "Isolated environment for running AI coding agents safely"
   homepage "https://github.com/0x666c6f/safe-agentic"
-  url "https://github.com/0x666c6f/safe-agentic/releases/download/v0.1.1/safe-agentic-v0.1.1-darwin-universal.tar.gz"
-  sha256 "19325e582550d88d0c8b11180397d588bde6dfd2f867785a62d0cc47194b4443"
-  version "0.1.1"
+  url "https://github.com/0x666c6f/safe-agentic/releases/download/v0.2.0/safe-agentic-v0.2.0-darwin-universal.tar.gz"
+  sha256 "69786a1de52bd3c4a68f4bcb5a309ee474f671e4dc1041e1aa2e5da4e4809acf"
+  version "0.2.0"
   license "MIT"
 
   def install
     libexec.install Dir["*"]
-    {"agent" => "safe-ag", "agent-claude" => "safe-ag-claude", "agent-codex" => "safe-ag-codex"}.each do |src, dst|
-      bin.install_symlink libexec/"bin"/src => dst
-    end
+    bin.install_symlink libexec/"bin"/"safe-ag"
+    bin.install_symlink libexec/"bin"/"safe-ag-tui"
   end
 
   test do
