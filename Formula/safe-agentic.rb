@@ -1,9 +1,9 @@
 class SafeAgentic < Formula
   desc "Isolated environment for running AI coding agents safely"
   homepage "https://github.com/0x666c6f/safe-agentic"
-  url "https://github.com/0x666c6f/safe-agentic/releases/download/v0.8.1/safe-agentic-v0.8.1-darwin-universal.tar.gz"
-  sha256 "0a2210f89bb7d3797a8079c1f40278d1c8c5214d2aa5763bcdd08dcf0e904b2f"
-  version "0.8.1"
+  url "https://github.com/0x666c6f/safe-agentic/releases/download/v0.9.0/safe-agentic-v0.9.0-darwin-universal.tar.gz"
+  sha256 "937cd0d57a5dff63e24c793830f05b693abc4e6d6b90dacb87e7979cedb9be08"
+  version "0.9.0"
   license "MIT"
 
   def install
