@@ -6,6 +6,8 @@ class SafeAgentic < Formula
   version "0.9.0"
   license "MIT"
 
+  deprecate! date: "2026-07-07", because: "it was renamed to berth: brew install 0x666c6f/tap/berth"
+
   def install
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin"/"safe-ag"
