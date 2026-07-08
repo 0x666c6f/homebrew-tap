@@ -1,9 +1,9 @@
 class Berth < Formula
   desc "Isolated environment for running AI coding agents safely"
   homepage "https://github.com/0x666c6f/berth"
-  url "https://github.com/0x666c6f/berth/releases/download/v1.4.2/berth-v1.4.2-darwin-universal.tar.gz"
-  sha256 "3e77049568113170db2e1742f0253da7c5fb0b15af03f70399c4c434ff1cde83"
-  version "1.4.2"
+  url "https://github.com/0x666c6f/berth/releases/download/v1.4.3/berth-v1.4.3-darwin-universal.tar.gz"
+  sha256 "27fd9aba00ed9db726ac3eefdb6b4cecde3ba7e1c1209b61d7fc43766f869aa1"
+  version "1.4.3"
   license "MIT"
 
   def install
